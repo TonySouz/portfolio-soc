@@ -1,6 +1,6 @@
-import Hero from "./sections/Hero/hero"
-import About from "./sections/About/about"
-import Projects from "./sections/Projects/projects"
+import Hero from "./sections/Hero/Hero"
+import About from "./sections/About/About"
+import Projects from "./sections/Projects/Projects"
 
 const Home = () => {
     return (
