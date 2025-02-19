@@ -27,7 +27,7 @@ const Hero = () => {
                 <Container maxWidth="lg">
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={5}>
-                            <StyledImg src="/assets/images/perfil.jpg" alt="perfil"/>
+                            <StyledImg src="src\assets\images\perfil.jpg" alt="perfil"/>
                         </Grid>
                         <Grid item xs={12} md={7}>
                             <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Tony Souza</Typography>

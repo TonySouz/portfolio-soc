@@ -1,6 +1,8 @@
 import { Container, Grid, styled, Typography } from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
 import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
+import '../../../../components/StyledMarquee/StyledMarquee.css';
+import MarqueeContainer from '../../../../components/StyledMarquee/MarqueeContainer';
 
 const About = () => {
 
@@ -25,21 +27,17 @@ const About = () => {
     return (
         <StyledAbout>
             <Container maxWidth="lg">
-                <Typography color="primary.contrastText" variant="h2" textAlign="center" pb={2}>
-                    Sobre Mim
-                </Typography>
+                <Typography color="primary.contrastText" variant="h2" textAlign="center" pb={2}>Sobre Mim</Typography>
                 <Grid container justifyContent="center" spacing={2}>
                     <Grid item xs={12} md={4}>
                         <StyledGrid container justifyContent="center" direction="column" alignItems="center">
                             <Grid item>
-                                <HomeRepairServiceIcon fontSize="large" />
-                                <Typography color="primary.contrastText" variant="h5">
-                                    Experiência
-                                </Typography>
+                                <HomeRepairServiceIcon fontSize="large" sx={{ color: 'primary.contrastText' }} />
+                                <Typography color="primary.contrastText" variant="h5">Experiência</Typography>
                             </Grid>
                             <Grid item>
                                 <Typography variant="body1" color="primary.contrastText" sx={{ fontSize: '1.2rem' }}>
-                                    2+ anos<br />
+                                    1 + anos<br />
                                     Desenvolvedor FRONTEND
                                 </Typography>
                             </Grid>
@@ -48,10 +46,8 @@ const About = () => {
                     <Grid item xs={12} md={4}>
                         <StyledGrid container direction="column" alignItems="center">
                             <Grid item>
-                                <SchoolIcon fontSize="large" />
-                                <Typography color="primary.contrastText" variant="h5">
-                                    Educação
-                                </Typography>
+                                <SchoolIcon fontSize="large" sx={{ color: 'primary.contrastText' }} />
+                                <Typography color="primary.contrastText" variant="h5">Educação</Typography>
                             </Grid>
                             <Grid item>
                                 <Typography variant="body1" color="primary.contrastText" sx={{ fontSize: '1.2rem' }}>
@@ -63,14 +59,19 @@ const About = () => {
                     </Grid>
                 </Grid>
                 <Typography variant="body1" color="primary.contrastText" sx={{ textIndent: '2em', fontSize: '1.2rem', borderBottom: '1px solid' }} pb={2} pt={2}>
-                    Iniciei minha carreira na área da educação, atuando por quatro anos e meio como professor de Física. 
+                    Iniciei minha carreira na área da educação, atuando por três anos como professor de Física. 
                     Realizei uma transição de carreira, desistindo do curso de Licenciatura em Física 
                     para iniciar o curso de Análise e Desenvolvimento de Sistemas na modalidade EAD. 
-                    Possuo dois anos de experiência em desenvolvimento web, adquirida por meio de projetos pessoais, 
+                    Possuo um anos de experiência em desenvolvimento web, adquirida por meio de projetos pessoais, 
                     onde trabalhei com ferramentas modernas para a construção de sistemas responsivos. 
                     Atualmente, tenho o objetivo de seguir carreira em Segurança da Informação e estou focado 
                     em aprimorar meus conhecimentos e habilidades nessa área.
                 </Typography>
+                <Typography color="primary.contrastText" variant="h2" textAlign="center" pb={2} pt={2}>Habilidades</Typography>
+                <Grid container color="primary.contrastText" sx={{ fontSize: '1.2rem', borderBottom: '1px solid' }} pb={2} pt={2}>
+                    <Grid item xs={12}><MarqueeContainer /></Grid>
+                </Grid>
+                <Typography color="primary.contrastText" variant="h2" textAlign="center" pb={2} pt={2}>Certificados</Typography>
             </Container>
         </StyledAbout>
     );

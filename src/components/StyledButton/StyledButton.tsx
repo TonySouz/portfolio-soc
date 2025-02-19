@@ -5,9 +5,9 @@ interface StyledButtonProps {
     children: ReactNode
 }
 
-const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
+const StyledButton: React.FC<StyledButtonProps>=({children}) => {
 
-    const StyledButton = styled("button")(({theme}) => ({
+    const StyledButton=styled("button")(({theme})=>({
         backgroundColor: "transparent",
         border: `1px solid ${theme.palette.primary.contrastText}`,
         borderRadius: "8px",
@@ -25,13 +25,9 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
 
     return (
         <>
-        
             <StyledButton>
-
                 {children}
-
             </StyledButton>
-        
         </>
     )
 
