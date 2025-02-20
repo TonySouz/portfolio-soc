@@ -42,6 +42,18 @@ const MarqueeContainer = () => {
                     <StyledIcon src="src/components/StyledMarquee/icons/python.svg" alt="python" />
                     <Typography color="primary.contrastText" variant="h6">Python</Typography>
                 </Box>
+                <Box display="flex" alignItems="center">
+                    <StyledIcon src="src/components/StyledMarquee/icons/bootstrap.svg" alt="bootstrap" />
+                    <Typography color="primary.contrastText" variant="h6">Bootstrap</Typography>
+                </Box>
+                <Box display="flex" alignItems="center">
+                    <StyledIcon src="src/components/StyledMarquee/icons/github.svg" alt="github" />
+                    <Typography color="primary.contrastText" variant="h6">Github</Typography>
+                </Box>
+                <Box display="flex" alignItems="center">
+                    <StyledIcon src="src/components/StyledMarquee/icons/git.svg" alt="git" />
+                    <Typography color="primary.contrastText" variant="h6">Git</Typography>
+                </Box>
             </Box>
         </Box>
     );

@@ -39,28 +39,34 @@ const Projects = () => {
                     Projetos
                 </Typography>
                 <Grid container spacing={4} display="flex" justifyContent="center">
-                        <Grid item xs={12} md={6}>
-                            <StyledProject>
-                                <Typography color="primary.contrastText" variant="h5" textAlign="left" pb={2}>Citações</Typography>
-                                <StyledImg src="src\assets\images\citacoes.png" alt="citacoes" />
-                                <Grid container spacing={2} justifyContent="center">
-                                    <Grid item xs={6}>
-                                        <Link href="https://tonysouz.github.io/citacoes/" target="_blank" rel="noopener noreferrer" underline="none">
-                                        <StyledButton>
-                                            <Typography>Visualizar</Typography>
-                                        </StyledButton>
-                                        </Link>
-                                    </Grid>
-                                    <Grid item xs={6}>
-                                        <Link href="https://github.com/TonySouz/citacoes" target="_blank" rel="noopener noreferrer" underline="none">
-                                        <StyledButton>
-                                            <Typography>Código</Typography>
-                                        </StyledButton>
-                                        </Link>
-                                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <StyledProject>
+                        <Typography color="primary.contrastText" variant="h5" textAlign="left">Citações</Typography>
+                        <Typography color="primary.contrastText" variant="h6" textAlign="left">
+                            <em>12 Fevereiro, 2025 – 19 Fevereiro, 2025</em>
+                        </Typography>
+                            <StyledImg src="src\assets\images\citacoes.png" alt="citacoes" />
+                            <Typography color="primary.contrastText" variant="h6" textAlign="left" pb={2} sx={{ textIndent: '2em', fontSize: '1.2rem' }}>
+                            O site Citações apresenta uma coleção de frases inspiradoras e motivacionais em uma interface minimalista e intuitiva. 
+                            Com um design limpo e organizado, proporciona uma experiência agradável para quem busca reflexões positivas e estímulo para o dia a dia.
+                            </Typography>
+                                <Typography color="primary.contrastText" variant="body1" textAlign="left" pb={2}>
+                                    Tecnologias: React(Vite), Typescript, CSS3, HTML5, Github, Git
+                                </Typography>
+                            <Grid container spacing={2} justifyContent="center">
+                                <Grid item xs={4}>
+                                    <Link href="https://tonysouz.github.io/citacoes/" target="_blank" rel="noopener noreferrer" underline="none">
+                                        <StyledButton><Typography>Visualizar</Typography></StyledButton>
+                                    </Link>
                                 </Grid>
-                            </StyledProject>
-                        </Grid>
+                                <Grid item xs={4}>
+                                    <Link href="https://github.com/TonySouz/citacoes" target="_blank" rel="noopener noreferrer" underline="none">
+                                        <StyledButton><Typography>Código</Typography></StyledButton>
+                                    </Link>
+                                </Grid>
+                            </Grid>
+                        </StyledProject>
+                    </Grid>
                 </Grid>
             </Container>
         </StyledHero>

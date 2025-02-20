@@ -1,4 +1,4 @@
-import { styled, Grid, Container, Typography } from '@mui/material';
+import { styled, Grid, Container, Typography, Link } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import StyledButton from '../../../../components/StyledButton/StyledButton';
@@ -32,18 +32,26 @@ const Hero = () => {
                         <Grid item xs={12} md={7}>
                             <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Tony Souza</Typography>
                             <Typography color="primary.contrastText" variant="h3" textAlign="center">Desenvolvedor FRONTEND</Typography>
-                        <Grid container display="flex" justifyContent="center" spacing={2} pt={4}>
+                        <Grid container display="flex" justifyContent="center" spacing={2} pt={2}>
                         <Grid item xs={12} md={3} display="flex" justifyContent="center">
-                            <StyledButton><DownloadIcon /><Typography>CV</Typography></StyledButton>
+                            <Link href="" target="_blank" rel="noopener noreferrer" underline="none">
+                                <StyledButton><DownloadIcon /><Typography>CV</Typography></StyledButton>
+                            </Link>
                         </Grid>
                         <Grid item xs={12} md={3} display="flex" justifyContent="center">
-                            <StyledButton><EmailIcon /><Typography>E-mail</Typography></StyledButton>
+                            <Link href="mailto:tonysouz97@gmail.com" target="_blank" rel="noopener noreferrer" underline="none">
+                                <StyledButton><EmailIcon /><Typography>E-mail</Typography></StyledButton>
+                            </Link>
                         </Grid>
                         <Grid item xs={12} md={3} display="flex" justifyContent="center">
-                            <StyledButton><LinkedInIcon /><Typography>LinkedIn</Typography></StyledButton>
+                            <Link href="https://www.linkedin.com/in/tony-souza/" target="_blank" rel="noopener noreferrer" underline="none">
+                                <StyledButton><LinkedInIcon /><Typography>LinkedIn</Typography></StyledButton>
+                            </Link>
                         </Grid>
                         <Grid item xs={12} md={3} display="flex" justifyContent="center">
-                            <StyledButton><GitHubIcon /><Typography>GitHub</Typography></StyledButton>
+                            <Link href="https://github.com/TonySouz" target="_blank" rel="noopener noreferrer" underline="none">
+                                <StyledButton><GitHubIcon /><Typography>GitHub</Typography></StyledButton>
+                            </Link>
                         </Grid>
                         </Grid>
                         </Grid> 

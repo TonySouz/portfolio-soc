@@ -3,6 +3,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
 import '../../../../components/StyledMarquee/StyledMarquee.css';
 import MarqueeContainer from '../../../../components/StyledMarquee/MarqueeContainer';
+import StyledCertificados from '../../../../components/StyledCertificados/StyledCertificados'
 
 const About = () => {
 
@@ -72,6 +73,9 @@ const About = () => {
                     <Grid item xs={12}><MarqueeContainer /></Grid>
                 </Grid>
                 <Typography color="primary.contrastText" variant="h2" textAlign="center" pb={2} pt={2}>Certificados</Typography>
+                <Grid container color="primary.contrastText" sx={{ fontSize: '1.2rem' }} pb={2} pt={2}>
+                    <Grid item xs={12}><StyledCertificados /></Grid>
+                </Grid>
             </Container>
         </StyledAbout>
     );
