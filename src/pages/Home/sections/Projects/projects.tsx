@@ -45,7 +45,7 @@ const Projects = () => {
                         <Typography color="primary.contrastText" variant="h6" textAlign="left">
                             <em>12 Fevereiro, 2025 – 19 Fevereiro, 2025</em>
                         </Typography>
-                            <StyledImg src="src\assets\images\citacoes.png" alt="citacoes" />
+                            <StyledImg src="images\citacoes.png" alt="citacoes" />
                             <Typography color="primary.contrastText" variant="h6" textAlign="left" pb={2} sx={{ textIndent: '2em', fontSize: '1.2rem' }}>
                             O site Citações apresenta uma coleção de frases inspiradoras e motivacionais em uma interface minimalista e intuitiva. 
                             Com um design limpo e organizado, proporciona uma experiência agradável para quem busca reflexões positivas e estímulo para o dia a dia.
