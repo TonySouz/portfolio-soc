@@ -43,16 +43,16 @@ const MarqueeContainer = () => {
                     <Typography color="primary.contrastText" variant="h6">Python</Typography>
                 </Box>
                 <Box display="flex" alignItems="center">
-                    <StyledIcon src="icons/bootstrap.svg" alt="bootstrap" />
-                    <Typography color="primary.contrastText" variant="h6">Bootstrap</Typography>
-                </Box>
-                <Box display="flex" alignItems="center">
-                    <StyledIcon src="icons/github.svg" alt="github" />
-                    <Typography color="primary.contrastText" variant="h6">Github</Typography>
+                    <StyledIcon src="icons/material-ui.svg" alt="bmaterial-ui" />
+                    <Typography color="primary.contrastText" variant="h6">Material UI</Typography>
                 </Box>
                 <Box display="flex" alignItems="center">
                     <StyledIcon src="icons/git.svg" alt="git" />
                     <Typography color="primary.contrastText" variant="h6">Git</Typography>
+                </Box>
+                <Box display="flex" alignItems="center">
+                    <StyledIcon src="icons/github.svg" alt="github" />
+                    <Typography color="primary.contrastText" variant="h6">Github</Typography>
                 </Box>
             </Box>
         </Box>

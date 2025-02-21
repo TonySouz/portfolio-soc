@@ -12,12 +12,13 @@ const Projects = () => {
         padding: '2rem 0',
     }));
 
-    const StyledImg = styled('img')(({ theme }) => ({
-        width: '80%',
+    const StyledImg = styled("img")(({ theme }) => ({
+        width: "100%",
+        maxWidth: "80%",
         border: `1px solid ${theme.palette.primary.contrastText}`,
-        display: 'flex',
-        alignItems: 'center',
-    }));
+        display: "block",
+        margin: "auto",
+    }));    
 
     const StyledProject = styled(Grid)(({ theme }) => ({
         backgroundColor: 'transparent',
@@ -53,18 +54,18 @@ const Projects = () => {
                                 <Typography color="primary.contrastText" variant="body1" textAlign="left" pb={2}>
                                     Tecnologias: React(Vite), Typescript, CSS3, HTML5, Github, Git
                                 </Typography>
-                            <Grid container spacing={2} justifyContent="center">
-                                <Grid item xs={4}>
-                                    <Link href="https://tonysouz.github.io/citacoes/" target="_blank" rel="noopener noreferrer" underline="none">
-                                        <StyledButton><Typography>Visualizar</Typography></StyledButton>
-                                    </Link>
+                                <Grid container spacing={2} justifyContent="center">
+                                    <Grid item xs={12} sm={4} display="flex" justifyContent="center">
+                                        <Link href="https://tonysouz.github.io/citacoes/" target="_blank" rel="noopener noreferrer" underline="none">
+                                            <StyledButton><Typography>Visualizar</Typography></StyledButton>
+                                        </Link>
+                                    </Grid>
+                                    <Grid item xs={12} sm={4} display="flex" justifyContent="center">
+                                        <Link href="https://github.com/TonySouz/citacoes" target="_blank" rel="noopener noreferrer" underline="none">
+                                            <StyledButton><Typography>Código</Typography></StyledButton>
+                                        </Link>
+                                    </Grid>
                                 </Grid>
-                                <Grid item xs={4}>
-                                    <Link href="https://github.com/TonySouz/citacoes" target="_blank" rel="noopener noreferrer" underline="none">
-                                        <StyledButton><Typography>Código</Typography></StyledButton>
-                                    </Link>
-                                </Grid>
-                            </Grid>
                         </StyledProject>
                     </Grid>
                 </Grid>
@@ -73,4 +74,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default Projects

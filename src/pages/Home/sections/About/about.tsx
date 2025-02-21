@@ -9,7 +9,7 @@ const About = () => {
 
     const StyledAbout = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.secondary.light,
-        height: "100vh",
+        minHeight: "100vh",
         display: "flex",
         alignItems: "center",
         padding: theme.spacing(4),
@@ -21,7 +21,7 @@ const About = () => {
         borderRadius: "8px",
         padding: "20px",
         justifyContent: "center",
-        gap: "8px",
+        gap: theme.spacing(1),
         textAlign: "center",
     }));
 
@@ -38,7 +38,7 @@ const About = () => {
                             </Grid>
                             <Grid item>
                                 <Typography variant="body1" color="primary.contrastText" sx={{ fontSize: '1.2rem' }}>
-                                    1 + anos<br />
+                                    1 + ano<br />
                                     Desenvolvedor FRONTEND
                                 </Typography>
                             </Grid>
@@ -60,13 +60,10 @@ const About = () => {
                     </Grid>
                 </Grid>
                 <Typography variant="body1" color="primary.contrastText" sx={{ textIndent: '2em', fontSize: '1.2rem', borderBottom: '1px solid' }} pb={2} pt={2}>
-                    Iniciei minha carreira na área da educação, atuando por três anos como professor de Física. 
-                    Realizei uma transição de carreira, desistindo do curso de Licenciatura em Física 
-                    para iniciar o curso de Análise e Desenvolvimento de Sistemas na modalidade EAD. 
-                    Possuo um anos de experiência em desenvolvimento web, adquirida por meio de projetos pessoais, 
-                    onde trabalhei com ferramentas modernas para a construção de sistemas responsivos. 
-                    Atualmente, tenho o objetivo de seguir carreira em Segurança da Informação e estou focado 
-                    em aprimorar meus conhecimentos e habilidades nessa área.
+                    Desenvolvedor web com experiência em frontend e backend, utilizando tecnologias modernas como React, 
+                    TypeScript, Node.js e Material UI. Tenho um ano de experiência em projetos pessoais e freelances, 
+                    focando na criação de interfaces responsivas e sistemas escaláveis. Atualmente, estou aprofundando 
+                    meus conhecimentos em Segurança da Informação, buscando oportunidades para atuar na área.
                 </Typography>
                 <Typography color="primary.contrastText" variant="h2" textAlign="center" pb={2} pt={2}>Habilidades</Typography>
                 <Grid container color="primary.contrastText" sx={{ fontSize: '1.2rem', borderBottom: '1px solid' }} pb={2} pt={2}>

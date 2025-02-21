@@ -17,7 +17,7 @@ const Certificados = () => {
             justifyContent: 'center',
             alignItems: 'center',
             flexWrap: 'wrap',
-            gap: 3,
+            gap: 8,
             width: '100%',
             height: '100%',
         }}>
@@ -25,12 +25,11 @@ const Certificados = () => {
                 display: "flex",
                 alignItems: "center",
                 flexDirection: "row",
-                flex: 1,
                 justifyContent: "center",
             }}>
                 <Typography color="primary.contrastText" variant="h5" pr={2} sx={{ whiteSpace: "nowrap" }}>
                     Analista SOC<br />
-                    <Typography color="primary.contrastText"><em>Janeiro 2025 - Janeiro 2028</em></Typography>
+                    <Typography color="primary.contrastText"><em>Janeiro 2025</em></Typography>
                 </Typography>
                 <Link href="https://certs.ibsec.com.br/?cert_hash=ee6346ae7b6f112b" target="_blank">
                     <StyledCertificados src="certificados/soc.png" alt="soc" />
@@ -41,7 +40,6 @@ const Certificados = () => {
                 display: "flex",
                 alignItems: "center",
                 flexDirection: "row",
-                flex: 1,
                 justifyContent: "center",
             }}>
                 <Typography color="primary.contrastText" variant="h5" pr={2} sx={{ whiteSpace: "nowrap" }}>
@@ -57,7 +55,6 @@ const Certificados = () => {
                 display: "flex",
                 alignItems: "center",
                 flexDirection: "row",
-                flex: 1,
                 justifyContent: "center",
             }}>
                 <Typography color="primary.contrastText" variant="h5" pr={2} sx={{ whiteSpace: "nowrap" }}>
